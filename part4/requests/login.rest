@@ -1,0 +1,35 @@
+POST http://localhost:3003/api/login
+Content-Type: application/json
+
+{
+    "username": "root",
+    "password": "test"
+}
+
+###
+GET http://localhost:3003/api/blogs
+Authorization: bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6InJvb3QiLCJpZCI6IjY0ZmVkMjkyM2EyMDYzZGIyYzAzYmJjNyIsImlhdCI6MTY5NDQyODYzNiwiZXhwIjoxNjk0NDMyMjM2fQ.Z5GHfVEJgYwC_TVS6eBmWYrG6j5etoNpqg4TUkpEfRU
+
+###
+GET http://localhost:3003/api/blogs
+
+
+###
+POST http://localhost:3003/api/blogs
+Content-Type: application/json
+Authorization: bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6InJvb3QiLCJpZCI6IjY0ZmVkMjkyM2EyMDYzZGIyYzAzYmJjNyIsImlhdCI6MTY5NDQzNjA3OSwiZXhwIjoxNjk0NDM5Njc5fQ.2ZC5N-rGD1twdlvQQ9oINHhJePWoKb8lduU0r7UH1xo
+
+{
+  "title": "Fugas o la ansiedad de sentirse vivo",
+  "author": "A. Pacheco",
+  "url": "https://unlibroenmimochila.blogspot.com/2017/12/fugas-o-la-ansiedad-de-sentirse-vivo.html",
+  "likes": 4,
+  "userId": "64fed2923a2063db2c03bbc7"
+}
+
+###
+DELETE http://localhost:3003/api/blogs/64feedea0f268b96ab900f3e
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6InJvb3QiLCJpZCI6IjY0ZmVkMjkyM2EyMDYzZGIyYzAzYmJjNyIsImlhdCI6MTY5NDQyODYzNiwiZXhwIjoxNjk0NDMyMjM2fQ.Z5GHfVEJgYwC_TVS6eBmWYrG6j5etoNpqg4TUkpEfRU
+
+###
+DELETE http://localhost:3003/api/blogs/64fef25f0b795f2794275998

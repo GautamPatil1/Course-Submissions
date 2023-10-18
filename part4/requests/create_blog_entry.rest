@@ -1,0 +1,28 @@
+POST http://localhost:3003/api/blogs
+Content-Type: application/json
+
+{
+  "title": "Test of blog title 2",
+  "author": "Test of blog author 2",
+  "url": "Test of blog url 2",
+  "likes": 0,
+  "userId": "64fed2923a2063db2c03bbc7"
+}
+
+###
+POST http://localhost:3003/api/blogs
+Content-Type: application/json
+
+{
+  "title": "Fugas o la ansiedad de sentirse vivo",
+  "author": "A. Pacheco",
+  "url": "https://unlibroenmimochila.blogspot.com/2017/12/fugas-o-la-ansiedad-de-sentirse-vivo.html",
+  "likes": 4,
+  "userId": "64fed2923a2063db2c03bbc7"
+}
+
+###
+GET http://localhost:3003/api/blogs/
+
+###
+DELETE http://localhost:3003/api/blogs/64fdd30b5e8ccd4fa2a5ac26
